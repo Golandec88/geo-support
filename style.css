@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Druk-Wide Bold";
+  src: url("./assets/fonts/DrukCyr-Bold.eot");
+  src: url("./assets/fonts/DrukCyr-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DrukCyr-Bold.woff2") format("woff2"), url("./assets/fonts/DrukCyr-Bold.woff") format("woff"), url("./assets/fonts/DrukCyr-Bold.ttf") format("truetype"), url("./assets/fonts/DrukCyr-Bold.svg#DrukCyr-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Druk-Wide Super";
+  src: url("./assets/fonts/DrukCyr-Super.eot");
+  src: url("./assets/fonts/DrukCyr-Super.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DrukCyr-Super.woff2") format("woff2"), url("./assets/fonts/DrukCyr-Super.woff") format("woff"), url("./assets/fonts/DrukCyr-Super.ttf") format("truetype"), url("./assets/fonts/DrukCyr-Super.svg#DrukCyr-Super") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Druk-Wide Medium";
+  src: url("./assets/fonts/DrukCyr-Medium.eot");
+  src: url("./assets/fonts/DrukCyr-Medium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DrukCyr-Medium.woff2") format("woff2"), url("./assets/fonts/DrukCyr-Medium.woff") format("woff"), url("./assets/fonts/DrukCyr-Medium.ttf") format("truetype"), url("./assets/fonts/DrukCyr-Medium.svg#DrukCyr-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --orange: #E99C28;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+a, a:hover {
+  color: black;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+}
+input::placeholder, textarea::placeholder {
+  color: #CBCBCB;
+}
+
+.spacer {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.color-orange {
+  color: var(--orange);
+}
+
+.button {
+  background: var(--orange);
+  border: none;
+  width: 150px;
+  padding: 7px 0;
+}
+.button--arrow {
+  width: auto;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 7px 20px;
+  border-radius: 10px !important;
+  border: 1px solid var(--orange);
+  outline: none !important;
+  transition: 0.3s;
+}
+.button--arrow:hover {
+  background: var(--orange);
+  transition: 0.3s;
+  color: white;
+}
+.button--arrow:hover svg path {
+  fill: white !important;
+  transition: 0.3s;
+}
+.button--arrow svg {
+  transition: 0.3s;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.alert-word {
+  font-family: "Druk-Wide Medium", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header {
+  position: relative;
+}
+.header > img {
+  width: 100%;
+}
+.header .owl-carousel .owl-item {
+  position: relative;
+  min-height: 600px;
+  font-family: "Druk-Wide Bold", sans-serif;
+  color: white;
+}
+.header .owl-carousel .owl-item__bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+.header .owl-carousel .owl-item .container {
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+}
+.header .owl-carousel .owl-item h1 {
+  font-size: 75px;
+  letter-spacing: 5px;
+}
+.header .owl-carousel .owl-dots {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 35px;
+}
+.header .owl-carousel .owl-dots .owl-dot {
+  outline: none;
+}
+.header .owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--orange);
+}
+.header .search {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  bottom: 100px;
+  align-items: center;
+}
+.header .search form {
+  display: flex;
+}
+.header .search form input {
+  width: 550px;
+}
+.header .search form .button {
+  position: relative;
+  padding: 7px 10px;
+  display: flex;
+  justify-content: center;
+}
+.header .search p {
+  color: white;
+}
+.header .search p a {
+  color: white;
+}
+
+.info {
+  font-size: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+.info img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.achievements {
+  padding: 50px;
+}
+.achievements svg {
+  margin-bottom: 15px;
+  height: 50px;
+  width: 50px;
+}
+.achievements h5 {
+  font-family: "Druk-Wide Medium", sans-serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.achievements p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #545454;
+}
+
+.mailing {
+  background: #2B2B2B;
+  padding: 50px 0;
+  color: white;
+}
+.mailing .col-lg-6 {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.mailing h3 {
+  font-size: 40px;
+}
+.mailing p {
+  font-size: 18px;
+}
+.mailing .alert-word {
+  font-size: 60px;
+  font-family: "Druk-Wide Super", sans-serif;
+}
+.mailing form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.mailing form button {
+  color: white;
+}
+
+.news {
+  padding: 80px 0;
+  background: #EEEEEE;
+  color: #545454;
+}
+.news h5 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.news h6 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.news p {
+  margin-bottom: 50px;
+  font-size: 19px;
+}
+.news .owl-carousel .owl-item {
+  min-height: 500px;
+  background: gray;
+}
+.news .owl-carousel .owl-dot {
+  outline: none;
+}
+.news .owl-carousel .owl-dot.active span {
+  background: var(--orange);
+}
+
+.shop {
+  display: flex;
+  padding: 100px 0;
+}
+.shop .container {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 1340px;
+}
+.shop .card {
+  width: 33%;
+  flex-basis: 33%;
+  margin-bottom: 100px;
+  padding: 20px;
+  border: none;
+}
+.shop .card img {
+  width: 100%;
+}
+.shop .card > div {
+  padding: 30px 30px;
+  box-shadow: 0 15px 25px #b1b1b1;
+}
+.shop .card p {
+  font-size: 15px;
+}
+.shop .card svg {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.about {
+  background: #F0F0F0;
+  padding: 50px;
+}
+.about h3 {
+  font-size: 50px;
+}
+.about p {
+  font-size: 18px;
+}
+.about form {
+  display: flex;
+  flex-flow: column;
+}
+.about form label {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+.about form input, .about form textarea {
+  margin-top: 20px;
+}
+.about form .button {
+  color: white;
+}
+.about .info {
+  padding-top: 85px;
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+}
+.about .info ul {
+  display: flex;
+  flex-flow: column;
+}
+.about .info ul li {
+  padding: 5px 0;
+}
+.about .info h5 {
+  margin-bottom: 20px;
+}
+.about .info .alert-word {
+  font-size: 24px;
+  font-family: "Druk-Wide Bold", sans-serif;
+}
+
+.footer {
+  padding-top: 50px;
+  font-size: 15px;
+  color: #B6B6B6;
+}
+.footer a {
+  font-size: 15px;
+  color: #B6B6B6;
+}
+.footer__info-links {
+  flex-flow: column;
+}
+.footer__info-link {
+  margin-bottom: 10px;
+}
+.footer__links {
+  justify-content: space-between;
+  padding: 40px 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
