@@ -298,6 +298,22 @@ input, textarea {
     }
   }
 }
+@media(max-width: 1200px) {
+  .shop {
+    .card {
+      width: 50%;
+      flex-basis: 50%;
+    }
+  }
+}
+@media(max-width: 768px) {
+  .shop {
+    .card {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
 .about {
   background: #F0F0F0;
   padding: 50px;
