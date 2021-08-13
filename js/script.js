@@ -5,4 +5,5 @@ $(document).ready(() => {
         nav: false,
         items: 1
     })
+    new WOW().init();
 })
